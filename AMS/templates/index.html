@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143d32">
+  <title>BMSIT CSE · Assignment Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script defer src="/static/app.js"></script>
+</head>
+<body>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <main id="app">
+    <section class="login-layout">
+      <div class="login-art">
+        <div class="brand brand-light"><span class="brand-mark">B</span><span>BMSIT <small>COMPUTER SCIENCE & ENGINEERING</small></span></div>
+        <div class="art-copy">
+          <div class="eyebrow light-eyebrow"><span></span> DEPARTMENT OF CSE</div>
+          <h1>Good work<br>deserves a <em>better<br>workflow.</em></h1>
+          <p>One place for assignments, submissions and feedback. Spend less time coordinating — and more time learning.</p>
+        </div>
+        <div class="art-foot"><span>ASSIGNMENT PORTAL</span><span>01 — 26</span></div>
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+      </div>
+      <div class="login-panel">
+        <div class="mobile-brand brand"><span class="brand-mark">B</span><span>BMSIT <small>COMPUTER SCIENCE & ENGINEERING</small></span></div>
+        <div class="login-box">
+          <div class="eyebrow"><span></span> YOUR ACADEMIC WORKSPACE</div>
+          <h2>Welcome back</h2>
+          <p class="muted">Sign in with your college account to continue.</p>
+          <form id="login-form">
+            <label for="email">College email</label>
+            <div class="input-wrap"><span class="input-icon">＠</span><input id="email" name="email" type="email" autocomplete="username" placeholder="name@bmsit.edu" required></div>
+            <div class="label-row"><label for="password">Password</label><span class="field-hint">Secure sign in</span></div>
+            <div class="input-wrap"><span class="input-icon">⌑</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button class="password-toggle" type="button" aria-label="Show password">Show</button></div>
+            <button class="button button-primary login-button" type="submit">Sign in <span>→</span></button>
+            <div id="login-error" class="form-error" role="alert"></div>
+          </form>
+          <div class="demo-box"><div class="demo-top"><span class="demo-dot"></span> DEMO ACCESS</div><div class="demo-accounts"><button data-demo="student@bmsit.edu|Student123!"><b>Student</b><span>student@bmsit.edu</span></button><button data-demo="professor@bmsit.edu|Professor123!"><b>Professor</b><span>professor@bmsit.edu</span></button><button data-demo="admin@bmsit.edu|Admin123!"><b>Admin</b><span>admin@bmsit.edu</span></button></div></div>
+          <div class="login-footer"><span>© 2026 BMSIT CSE</span><span>Built for better learning <i>✳</i></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog id="assignment-dialog" class="dialog"><form method="dialog" class="dialog-close-row"><button class="icon-button" aria-label="Close">×</button></form><div id="dialog-content"></div></dialog>
+</body>
+</html>
